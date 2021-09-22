@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+*{
+
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+    
+    }
+
+
+
+body{
+
+font-family: 'Lato', sans-serif;
+color:white;
+overflow-x: none;
+margin:0;
+height:100vh;
+display: flex;
+flex-direction:column;
+background:black;
+}
+
+
+/* section 1 navbar  */
+
+.navbar{
+
+max-width: 600px;
+
+margin:0 auto;
+padding:5px;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+color:white;
+}
+.navbar-lg{
+display:none;
+}
+.title{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.login-modal{
+   
+    background: black;
+    padding: 1px 1px ;
+  position: absolute;
+    width: 100%;
+    left:0;
+    height:100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+   top:-100vh;
+    transition: 0.85s;
+    opacity: 0.85;
+          }
+
+ .services-sm{
+     width: 100;
+   margin: 0 auto;
+
+ }
+
+    .services-sm ul{
+       
+       height: 60vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       list-style: none;
+       gap:60px;
+       font-size: 28px;
+       font-weight: 700;
+       letter-spacing:3px;
+       
+       
+    }
+
+    .services-sm a:hover{
+         text-decoration: underline;
+    }
+/* section 2 slider  */
+
+/* section 3 menu */
+
+/* section 4 About Us  */
+
+/* section 5 Contact  */
+
+
+/* section 6 Footer  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.navbar{
+width: 100%;
+margin:0;
+}
+.main-logo{
+
+    display: none;
+}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.logo{
+    display: none;
+}
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) {
+
+.menu {
+    display: none;
+}
+.navbar-lg{
+    display: block;
+   
+}
+.navbar-lg ul{
+
+  
+  
+    gap:20px
+}
+.login-modal{
+
+    display: none;
+}
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

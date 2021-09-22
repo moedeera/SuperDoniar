@@ -1,0 +1,29 @@
+a{
+
+    color:white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+
+a:visited{
+
+    text-emphasis: none;
+    text-decoration: none;
+    color:white;
+ 
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+
+    text-decoration: none;
+}
