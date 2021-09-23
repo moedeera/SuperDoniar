@@ -323,15 +323,28 @@ grid-template-columns: 1fr;
 
 /* section 4 About Us  */
 /* Set the size of the div element that contains the map */
-#map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-  }
-/* section 5 Contact  */
+.about-us{
+    padding: 5px;
+margin:40px auto;
+max-width: 600px;
+    display: flex;
+    flex-direction:column;
+    gap:50px
+}
+.icon-phone{
+
+display: flex;
+flex-direction:column;
+gap:5px;
 
 
+}
+.icon-phone i{
+    padding:5px;
+color:steelblue;
+background: rgba(255, 255, 255, 0.659);
+border-radius:10px
+}
 /* section 6 Footer  */
 
 
