@@ -25,7 +25,39 @@ exitBtn.addEventListener('click', (e)=>{
   click = 1;
 
 })
+// Navigation
 
+
+function onLinkClick(x) {
+  if (x===0){
+    document.getElementById("showcase").scrollIntoView();
+ }
+
+  if (x===1){
+     document.getElementById("menu2").scrollIntoView();
+  }
+ if (x==2){
+  document.getElementById("about").scrollIntoView();
+ }
+ 
+}
+
+document.getElementById("homeOption").addEventListener('click',(e)=>{
+  e.preventDefault()
+  onLinkClick(0)
+})
+document.getElementById("menuOption").addEventListener('click',(e)=>{
+  e.preventDefault()
+  onLinkClick(1)
+})
+document.getElementById("contactOption").addEventListener('click',(e)=>{
+  e.preventDefault()
+  onLinkClick(2)
+})
+document.getElementById("aboutOption").addEventListener('click',(e)=>{
+  e.preventDefault()
+  onLinkClick(2)
+})
 
 // Slider  function 
 const LeftBtn = document.querySelector(".arrow-left")

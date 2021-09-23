@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+html{
+
+    scroll-behavior: smooth;
+}
 
 *{
 
@@ -39,6 +43,9 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 color:white;
+animation: nav-load 1s ease-in-out;
+
+
 }
 .navbar-lg{
 display:none;
@@ -127,6 +134,7 @@ display: grid;
 grid-template-columns: 1fr;
 gap:40px;
 margin:10px auto;
+animation: showcase-load 1s ease-in-out;
 
 }
 
@@ -354,7 +362,36 @@ border-radius:10px
 
 
 
+/*animations*/
+/*Navbar*/
+@keyframes  nav-load {
 
+0%{
+transform: translateX(100%);
+
+}
+
+100%{
+
+    transform: translateX(0);
+
+}
+}
+
+/*Showcase*/
+@keyframes  showcase-load {
+
+    0%{
+    transform: translateX(-100%);
+    
+    }
+    
+    100%{
+    
+        transform: translateX(0);
+    
+    }
+    }
 
 
 
