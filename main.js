@@ -30,9 +30,10 @@ exitBtn.addEventListener('click', (e)=>{
 // Slider  function 
 const LeftBtn = document.querySelector(".arrow-left")
 const rightBtn = document.querySelector(".arrow-right")
-const circles = document.querySelectorAll(".circles")
+const circles = [document.getElementById("circle1"),document.getElementById("circle2")
+,document.getElementById("circle3"),document.getElementById("circle4")]
 const slide = document.querySelectorAll(".slide")
-var current  = 3;  
+var current  = 0;  
 
 
 
@@ -41,6 +42,7 @@ LeftBtn.addEventListener('click', (e)=>{
 e.preventDefault();
 MoveLeft();
 
+
 })
 
 
@@ -48,9 +50,10 @@ rightBtn.addEventListener('click',(e)=>{
 e.preventDefault();
 MoveRight();
 
+
 })
 
-
+setInterval(MoveRight, 5000);
 
 function MoveLeft (){
 
@@ -97,7 +100,7 @@ else if (current===2){
     } 
     
 
-
+    CircleUpdate()
 
 
 
@@ -150,10 +153,30 @@ function MoveRight (){
       
   
   
-  
+      CircleUpdate()
   
   
   }
+
+function CircleUpdate(){
+
+for (var j=0; j<circles.length; j++){
+
+  circles[j].classList.remove("chosen");
+if (current===j){
+circles[j].classList.add("chosen")
+}
+
+
+}
+
+
+
+
+
+}
+
+
 
 
 
