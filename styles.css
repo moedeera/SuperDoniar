@@ -308,21 +308,27 @@ grid-template-columns: 1fr;
 
 }
 .opt2{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('pic1.jpg')no-repeat center center/cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('pic2.jpg')no-repeat center center/cover;
 
 }
 .opt3{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('pic1.jpg')no-repeat center center/cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('pic3.jpg')no-repeat center center/cover;
 
 }
 
 .opt4{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('pic1.jpg')no-repeat center center/cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('pic4.jpg')no-repeat center center/cover;
 
 }
 
 /* section 4 About Us  */
-
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
 /* section 5 Contact  */
 
 
@@ -360,7 +366,11 @@ margin:0;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+.choices {
 
+grid-template-columns: 1fr 1fr;
+
+}
 
 }
 
