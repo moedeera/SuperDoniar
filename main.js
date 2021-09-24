@@ -226,8 +226,8 @@ console.log(e.target)
 for(var j=0; j<MenuTargets.length; j++ ){
 if (e.target === MenuTargets[j]){
 
-MenuTables[j].style.bottom = "5%"
-MenuHeaders[j].style.top = "0%"
+MenuTables[j].style.bottom = "10%"
+MenuHeaders[j].style.top = "10%"
 }
 
 }
@@ -243,7 +243,7 @@ function ClearMenus () {
   for(var j=0; j<MenuTables.length; j++){
 
     MenuHeaders[j].style.top = "50%"
-  MenuTables[j].style.bottom = "-90%"
+  MenuTables[j].style.bottom = "-100%"
   
   }
   
