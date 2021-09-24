@@ -198,16 +198,53 @@ for (var j=0; j<circles.length; j++){
 if (current===j){
 circles[j].classList.add("chosen")
 }
+}}
 
+
+// Toggle Menu 
+
+
+var MenuTables = [document.getElementById("opt1"),document.getElementById("opt2"),
+document.getElementById("opt3"),document.getElementById("opt4")]
+
+var MenuHeaders = [document.getElementById("opt1h"),document.getElementById("opt2h"),
+document.getElementById("opt3h"),document.getElementById("opt4h")]
+
+var MenuTargets = [document.getElementById("opt1ht"),document.getElementById("opt2ht"),
+document.getElementById("opt3ht"),document.getElementById("opt4ht")]
+
+
+
+
+document.getElementById("choices-section").addEventListener('click', (e)=>{
+e.preventDefault()
+ClearMenus ()   
+
+console.log(e.target)
+
+
+for(var j=0; j<MenuTargets.length; j++ ){
+if (e.target === MenuTargets[j]){
+
+MenuTables[j].style.bottom = "5%"
+MenuHeaders[j].style.top = "0%"
+}
 
 }
 
 
+})
 
 
 
+function ClearMenus () {
+
+
+  for(var j=0; j<MenuTables.length; j++){
+
+    MenuHeaders[j].style.top = "50%"
+  MenuTables[j].style.bottom = "-90%"
+  
+  }
+  
 }
-
-
-
-

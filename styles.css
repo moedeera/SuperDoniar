@@ -316,7 +316,8 @@ grid-template-columns: 1fr;
     flex-direction: column;
    align-items: center;   
   justify-content: center;
-  z-index: -4;
+  overflow: hidden;
+ 
   
 }
 .opt1{
@@ -337,18 +338,40 @@ grid-template-columns: 1fr;
 
 }
 
+/*Menu-functionality*/
+.menu-header{
+  cursor: pointer;
+    position: absolute;
+    top:50%;
+    transition: 1s ease-in-out;
+}
+
+.menu-header a{
+
+cursor: pointer;
+
+}
+
+
+.menu-header a:hover{
+text-decoration: underline;
+
+}
 .menutable{
    
-
-width: 50%;
+position: absolute;
+bottom:-90%;
+width: 80%;
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-column-gap:40px;
+grid-column-gap:30px;
 grid-row-gap:10px;
 font-size: 16px;
-border:1px solid white;
-padding:5px;
+background: rgba(128, 128, 128, 0.445);
+border:3px solid white;
+padding: 10px;
 
+transition: 1s ease-in-out;
 
 
 
