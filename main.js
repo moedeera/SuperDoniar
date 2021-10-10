@@ -226,7 +226,7 @@ console.log(e.target)
 for(var j=0; j<MenuTargets.length; j++ ){
 if (e.target === MenuTargets[j]){
 
-MenuTables[j].style.bottom = "10%"
+MenuTables[j].style.bottom = "30%"
 MenuHeaders[j].style.top = "10%"
 }
 
