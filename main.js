@@ -85,7 +85,7 @@ MoveRight();
 
 })
 
-setInterval(MoveRight, 5000);
+setInterval(MoveRight, 6000);
 
 function MoveLeft (){
 
