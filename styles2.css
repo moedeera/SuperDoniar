@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("//db.onlinewebfonts.com/c/846c76800acda66a4dbfedb38a4c76a1?family=Snappy+Service+NF");
 
 html {
   scroll-behavior: smooth;
@@ -20,12 +21,14 @@ body {
   display: flex;
   flex-direction: column;
   background: black;
+  font-family: "Snappy Service NF";
+  font-size: 18px;
 }
 
 /* section 1 navbar  */
 
 .navbar {
-  max-width: 600px;
+  max-width: 1300px;
 
   margin: 0 auto;
   padding: 5px;
@@ -47,7 +50,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  letter-spacing: 3px;
 }
 .login-modal {
   background: black;
@@ -112,8 +116,12 @@ body {
   gap: 40px;
   margin: 10px auto;
   animation: showcase-load 1s ease-in-out;
+  font-family: "Snappy Service NF";
 }
-
+.slide h3 {
+  font-size: 43px !important;
+  letter-spacing: 2px !important;
+}
 .slider:hover {
   opacity: 0.8;
   transform: scale(0.98);
@@ -197,11 +205,14 @@ body {
 }
 .arrow-left,
 .arrow-right {
-  margin-top: 50px;
+  margin-top: 0px;
   background: rgba(128, 128, 128, 0.438);
   border: 2px solid transparent;
   border-radius: 50%;
-  padding: 5px;
+  padding: 15px;
+}
+.arrow-left i,
+.arrow-right i {
 }
 .circles {
   width: 100%;
@@ -233,7 +244,7 @@ body {
 }
 .menu-title {
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   background-color: rgba(128, 128, 128, 0.422);
   border-radius: 5px;
@@ -245,6 +256,8 @@ body {
   display: grid;
   gap: 5px;
   grid-template-columns: 1fr;
+  font-size: 40px;
+  letter-spacing: 1.5px;
 }
 
 .menu-title {
@@ -309,6 +322,8 @@ body {
   padding: 5px;
   padding-left: 6px;
   transition: 1s ease-in-out;
+  font-size: 20px;
+  letter-spacing: 1.5px;
 }
 
 /* section 4 About Us  */
@@ -316,7 +331,7 @@ body {
 .about-us {
   padding: 5px;
   margin: 40px auto;
-  max-width: 600px;
+  max-width: 1300px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -336,6 +351,7 @@ body {
 
 /*animations*/
 /*Navbar*/
+
 @keyframes nav-load {
   0% {
     transform: translateX(100%);
@@ -384,7 +400,7 @@ body {
   }
 
   .Menu {
-    max-width: 900px;
+    max-width: 1300px;
   }
   .navbar-lg,
   .main-logo {
@@ -392,6 +408,8 @@ body {
   }
   .navbar-lg ul {
     gap: 20px;
+    font-family: "Snappy Service NF";
+    font-size: 28px;
   }
   .login-modal {
     display: none;
@@ -401,24 +419,28 @@ body {
   }
 
   .showcase {
-    max-width: 900px;
-    grid-template-columns: 6fr 1fr;
+    max-width: 1300px;
+    grid-template-columns: 5fr 2fr;
   }
 
   .info-bar {
+    font-family: "Snappy Service NF";
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 25px;
-    border: 1px solid steelblue;
+    border: 1px solid grey;
+    letter-spacing: 2px;
+    font-size: 20px;
     border-radius: 15px;
+    background-color: #a10702;
   }
-  .info-bar h3,
+  .info-bar h2,
   p,
   img {
     align-items: center;
     text-align: center;
-    line-height: 1.9;
+    line-height: 1.6em;
     letter-spacing: 1.8;
   }
 }
@@ -428,4 +450,11 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+#map2 {
+  margin-bottom: 20px;
+}
+.mapframe {
+  border: 1px solid green;
+  background-color: aliceblue;
 }
