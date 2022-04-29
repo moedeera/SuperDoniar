@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-@import url("//db.onlinewebfonts.com/c/846c76800acda66a4dbfedb38a4c76a1?family=Snappy+Service+NF");
+@import url("https://db.onlinewebfonts.com/c/846c76800acda66a4dbfedb38a4c76a1?family=Snappy+Service+NF");
 
 html {
   scroll-behavior: smooth;
@@ -22,8 +22,8 @@ body {
   flex-direction: column;
   background: black;
   font-family: "Snappy Service NF";
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+
+  font-size: 18px;
 }
 
 /* section 1 navbar  */
@@ -51,8 +51,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+  font-size: 3rem;
+  letter-spacing: 3px;
 }
 .login-modal {
   background: black;
@@ -87,9 +87,9 @@ body {
   align-items: center;
   list-style: none;
   gap: 60px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .services-sm a:hover {
@@ -118,10 +118,9 @@ body {
   margin: 10px auto;
   animation: showcase-load 1s ease-in-out;
   font-family: "Snappy Service NF";
-  font-family: "Lato", sans-serif;
 }
 .slide h3 {
-  font-size: 35px !important;
+  font-size: 43px !important;
   letter-spacing: 2px !important;
 }
 .slider:hover {
@@ -258,7 +257,7 @@ body {
   display: grid;
   gap: 5px;
   grid-template-columns: 1fr;
-  font-size: 34px;
+  font-size: 40px;
   letter-spacing: 1.5px;
 }
 
@@ -324,7 +323,7 @@ body {
   padding: 5px;
   padding-left: 6px;
   transition: 1s ease-in-out;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1.5px;
 }
 
@@ -411,8 +410,7 @@ body {
   .navbar-lg ul {
     gap: 20px;
     font-family: "Snappy Service NF";
-    font-family: "Lato", sans-serif;
-    font-size: 23px;
+    font-size: 28px;
   }
   .login-modal {
     display: none;
@@ -428,14 +426,13 @@ body {
 
   .info-bar {
     font-family: "Snappy Service NF";
-    font-family: "Lato", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 25px;
     border: 1px solid grey;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 20px;
     border-radius: 15px;
     background-color: #a10702;
   }
