@@ -52,12 +52,48 @@ body {
 }
 .title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   letter-spacing: 3px;
   font-family: "Bungee Inline", cursive;
 }
+.line {
+  display: none;
+}
+.line-1 {
+  position: relative;
+
+  margin: 0 auto;
+
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both;
+  /* blinkTextCursor 500ms steps(44) infinite normal; */
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .login-modal {
   background: black;
   padding: 20px 1px;
@@ -456,6 +492,12 @@ body {
   }
   .menutable {
     font-size: 18px;
+  }
+  .line {
+    display: block;
+    margin-top: -35px;
+    width: 100%;
+    font-size: 10px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
