@@ -301,6 +301,7 @@ body {
   transition: 1s ease-in-out;
   background: rgba(128, 128, 128, 0.845);
   padding: 5px;
+  text-align: center;
 }
 
 .menu-header a {
@@ -321,11 +322,11 @@ body {
   grid-row-gap: 10px;
   font-size: 16px;
   background: rgba(128, 128, 128, 0.645);
-  color: white2;
+  color: white;
   padding: 5px;
   padding-left: 6px;
   transition: 1s ease-in-out;
-  font-size: 20px;
+
   letter-spacing: 1.5px;
 }
 
@@ -452,6 +453,9 @@ body {
     font-family: "Changa One", cursive;
     line-height: 1.5em;
     letter-spacing: 2px;
+  }
+  .menutable {
+    font-size: 18px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
