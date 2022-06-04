@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*Navbar-section for small screens*/
+.nav-bar {
+  border: 2px solid crimson;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  z-index: 1;
+}
+.navbar-container {
+}
+.nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  line-height: 50px;
+  padding: 0 5px;
+}
+
+/*Showcase-section for small screens*/
+
+.dummy {
+  padding-top: 50px;
+  border: 2px solid green;
+  height: 200vh;
+}
+.footer {
+  border: 3px solid orange;
+}
+.scroll-up {
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 10px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: gold; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: 1200ms ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: gold; /* Add a dark-grey background on hover */
+}
