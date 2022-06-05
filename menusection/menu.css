@@ -23,15 +23,18 @@
 }
 .menu-option {
   border: 2px solid yellow;
+  background-color: blue;
+  height: auto;
   overflow-y: hidden;
 }
 .menu-slider {
-  height: 400px;
+  height: 300px;
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  z-index: -1;
+  z-index: 0;
   transition: 800ms ease-in-out;
+  overflow-y: hidden;
 }
 .menu-slide {
   position: absolute;
@@ -39,29 +42,37 @@
   height: 100%;
   left: 0;
   top: 0;
+  animation: fade-down 1000ms;
+  transition: 1000ms ease-in-out;
 }
-#menu-slider-option-1 {
+#menu-slider-option-1,
+#menu-slider-option-1b {
+  background-color: crimson;
   transform: translateX(-200%);
   border: 2px solid crimson;
 }
-#menu-slider-option-2 {
+#menu-slider-option-2,
+#menu-slider-option-2b {
   transform: translateX(-100%);
-  background-color: aqua;
+  background-color: purple;
   border: 2px solid green;
 }
-#menu-slider-option-3 {
+#menu-slider-option-3,
+#menu-slider-option-3b {
   transform: translateX(0%);
   background-color: aqua;
   border: 2px solid green;
 }
-#menu-slider-option-4 {
+#menu-slider-option-4,
+#menu-slider-option-4b {
   transform: translateX(100%);
-  background-color: aqua;
+  background-color: grey;
   border: 2px solid green;
 }
-#menu-slider-option-5 {
+#menu-slider-option-5,
+#menu-slider-option-5b {
   transform: translateX(200%);
-  background-color: aqua;
+  background-color: orange;
   border: 2px solid green;
 }
 .menu-button {
@@ -73,6 +84,32 @@
   padding: 5px;
   border-radius: 4px;
 }
-#menu-slider-set-1 {
-  transform: translateY(-100%);
+#menu-slider-set-1,
+#menu-slider-set-2 {
+  display: none;
+}
+
+.menu-slider-buttons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  /* border: 2px solid green; */
+  font-size: 34px;
+  padding: 0 10px;
+  color: #34495e;
+}
+.menu-slider-buttons:hover {
+  color: goldenrod;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
