@@ -20,7 +20,7 @@
 }
 .navbar-modal-container {
   height: 100vh;
-  width: 70%;
+  width: 100%;
   max-width: 350px;
   padding-top: 60px;
   background-color: white;
@@ -97,7 +97,7 @@
 .nav-large {
   display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .nav {
     display: none;
   }
@@ -105,8 +105,11 @@
     display: none;
   }
   .nav-large {
-    border: 3px solid green;
-    width: 67%;
+    padding: 7px;
+    /* border: 3px solid green; */
+    width: 100%;
+
+    max-width: 1000px;
     margin: 0 auto;
     display: block;
   }
@@ -125,17 +128,62 @@
   }
   .menu-large-dropdown {
     position: absolute;
+    top: 35px;
     height: 250px;
     width: 300px;
-    background-color: aliceblue;
-    display: none;
+    background-color: white;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-large-dropdown > div:hover {
+    background-color: aliceblue;
+    cursor: pointer;
   }
   .menu-large-option {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(128, 128, 128, 0.107);
+    border-left: 1px solid rgba(128, 128, 128, 0.322);
+    border-bottom: 1px solid #34495e6e;
+    /* border: 1px solid rgba(128, 128, 128, 0.107); */
+  }
+  #ml-option-1 {
+    display: none;
+  }
+  #ml-option-2 {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+  }
+  #ml-option-3 {
+    height: 150px;
+  }
+  .menu-option-text {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: #34495e;
+    cursor: pointer;
+  }
+  .menu-option-text h3 {
+    font-size: 18px;
+    color: #34495e;
+    margin-left: 5px;
+  }
+  .menu-option-text i {
+    font-size: 16px;
+    transition: 200ms ease-in-out;
+  }
+  .menu-option-text i:hover {
+    color: #34495e;
+    transform: rotate(180deg);
+  }
+  .menu-option-text h3:hover {
+    color: goldenrod;
   }
 }
 
@@ -190,4 +238,7 @@
   100% {
     opacity: 1;
   }
+}
+
+@keyframes rotate {
 }

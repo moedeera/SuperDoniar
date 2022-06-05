@@ -42,6 +42,7 @@ smallNavOption1.addEventListener("click", () => {
     ClearOptions();
     smallOption1.style.display = "flex";
     arrow1.innerHTML = ' <i class="fa fa-chevron-up"></i>';
+    option = "menu";
   }
 });
 
@@ -58,6 +59,7 @@ smallNavOption2.addEventListener("click", () => {
     ClearOptions();
     smallOption2.style.display = "flex";
     arrow2.innerHTML = ' <i class="fa fa-chevron-up"></i>';
+    option = "hours";
   }
 });
 
@@ -74,6 +76,7 @@ smallNavOption3.addEventListener("click", () => {
     ClearOptions();
     smallOption3.style.display = "flex";
     arrow3.innerHTML = ' <i class="fa fa-chevron-up"></i>';
+    option = "location";
   }
 });
 
@@ -88,6 +91,7 @@ smallNavOption4.addEventListener("click", () => {
     option = "none";
   } else {
     ClearOptions();
+    option = "contact";
     smallOption4.style.display = "flex";
     arrow4.innerHTML = ' <i class="fa fa-chevron-up"></i>';
   }
