@@ -156,6 +156,8 @@
     grid-template-rows: 1fr 2fr 1fr 2fr;
   }
   #ml-option-3 {
+    display: none;
+    width: 200px;
     height: 150px;
   }
   .menu-option-text {
@@ -178,10 +180,10 @@
     font-size: 16px;
     transition: 200ms ease-in-out;
   }
-  .menu-option-text i:hover {
+  /* .menu-option-text i:hover {
     color: #34495e;
     transform: rotate(180deg);
-  }
+  } */
   .menu-option-text h3:hover {
     color: goldenrod;
   }
@@ -240,5 +242,11 @@
   }
 }
 
-@keyframes rotate {
+@keyframes icon-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }

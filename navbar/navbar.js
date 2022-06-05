@@ -120,3 +120,63 @@ backArrow.addEventListener("click", () => {
   document.getElementById("menu-side-bar").style =
     "transform:translateX(-100%)";
 });
+
+const dropDown1btn = document.getElementById("drop-down-1");
+const dropDown2btn = document.getElementById("drop-down-2");
+const dropDown3btn = document.getElementById("drop-down-3");
+
+const dropDownMenu1 = document.getElementById("ml-option-1");
+const dropDownMenu2 = document.getElementById("ml-option-2");
+const dropDownMenu3 = document.getElementById("ml-option-3");
+
+const icon1 = document.getElementById("menu-icon-1");
+const icon2 = document.getElementById("menu-icon-2");
+const icon3 = document.getElementById("menu-icon-3");
+
+function clearDropdowns(x) {
+  // if (x === 1) {
+  //     dropDownMenu2.style = "display:none";
+  //     dropDownMenu3.style = "display:none";
+  //     icon2.style = "transform:rotate(0deg)";
+  //     icon3.style = "transform:rotate(0deg)";
+  // }
+  // else if (x === 2) {
+
+  // } else if (x === 3) {
+
+  // }
+  dropDownMenu1.style = "display:none";
+  dropDownMenu2.style = "display:none";
+  dropDownMenu3.style = "display:none";
+  icon1.style = "transform:rotate(0deg)";
+  icon2.style = "transform:rotate(0deg)";
+  icon3.style = "transform:rotate(0deg)";
+}
+
+dropDown1btn.addEventListener("mouseover", () => {
+  clearDropdowns();
+  dropDownMenu1.style = "display:grid";
+  icon1.style = "transform:rotate(180deg)";
+});
+dropDown2btn.addEventListener("mouseover", () => {
+  clearDropdowns();
+  dropDownMenu2.style = "display:grid";
+  icon2.style = "transform:rotate(180deg)";
+});
+dropDown3btn.addEventListener("mouseover", () => {
+  clearDropdowns();
+  dropDownMenu3.style = "display:grid";
+  icon3.style = "transform:rotate(180deg)";
+});
+
+dropDownMenu1.addEventListener("mouseleave", () => {
+  clearDropdowns();
+});
+
+dropDownMenu2.addEventListener("mouseleave", () => {
+  clearDropdowns();
+});
+
+dropDownMenu3.addEventListener("mouseleave", () => {
+  clearDropdowns();
+});
