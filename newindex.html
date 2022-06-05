@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="./promosection/promo.css" />
       <link rel="stylesheet" href="./menusection/menu.css" />
       <link rel="stylesheet" href="./showsection/showcase.css" />
+      <link rel="stylesheet" href="./navbar/navbar.css" />
 
       <title>Super-Donair.com</title>
       <link
@@ -23,8 +24,37 @@
     <section class="nav-bar">
       <div class="navbar-container">
         <div class="nav">
-          <i class="fa fa-bars" aria-hidden="true"></i>
+          <i class="fa fa-bars" aria-hidden="true" id="navbar-menu"></i>
+          <i class="fa fa-arrow-left" aria-hidden="true" id="back-arrow"></i>
           <h1>Super-Donair</h1>
+        </div>
+        <div class="nav-large">
+          <div class="large-navbar-menu">
+            <h1>Super Donair</h1>
+            <div class="large-navbar-mini-menu">
+              <div>
+                <div id="Menu-option-lg">
+                  <img src="./navbar/icons8-burger-66.png" width="20px" />
+                  Menu
+                </div>
+                <div class="menu-large-dropdown" id="ml-option-1">
+                  <div class="menu-large-option">Option 1</div>
+                  <div class="menu-large-option">Option 2</div>
+                  <div class="menu-large-option">Option 3</div>
+                  <div class="menu-large-option">Option 4</div>
+                </div>
+              </div>
+              <div>
+                <img src="./navbar/icons8-clock-50.png" width="20px" />
+                Hours
+              </div>
+              <div>
+                <img src="./navbar/icons8-location-50.png" width="20px" />
+                Location
+              </div>
+            </div>
+            <div><i class="fa fa-phone">1-800-989-1000</i></div>
+          </div>
         </div>
       </div>
     </section>
@@ -55,15 +85,10 @@
             </div>
           </div>
 
-          <div class="buttons sm">
+          <div class="buttons">
             <i class="fa fa-circle" id="circle-1" style="color: crimson"></i>
             <i class="fa fa-circle" id="circle-2"></i>
             <i class="fa fa-circle" id="circle-3"></i>
-          </div>
-          <div class="buttons lg">
-            <i class="fa fa-circle" id="circle-1-lg" style="color: crimson"></i>
-            <i class="fa fa-circle" id="circle-2-lg"></i>
-            <i class="fa fa-circle" id="circle-3-lg"></i>
           </div>
         </div>
       </div>
@@ -101,8 +126,79 @@
         <i class="fa fa-chevron-up"></i>
       </button>
     </section>
+    <section class="navbar-menu-modal">
+      <div class="navbar-modal-container" id="menu-side-bar">
+        <div class="nav-menu-list">
+          <div class="menu-list">
+            <div class="menu-link" id="nav-sm-menu-option-1">
+              <div class="nav-menu-option">
+                <i class="fas fa-hamburger"></i> Menu
+              </div>
+              <div id="arrow-menu1">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="nav-option-drop" id="drop-1">
+              <div>Option 1</div>
+              <div>Option 2</div>
+              <div>Option 3</div>
+              <div>Option 4</div>
+            </div>
+
+            <div class="menu-link" id="nav-sm-menu-option-2">
+              <div class="nav-menu-option">
+                <i class="fas fa-clock"></i>hours
+              </div>
+
+              <div id="arrow-menu2">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="nav-option-drop" id="drop-2">
+              <div>Option 1</div>
+              <div>Option 2</div>
+              <div>Option 3</div>
+              <div>Option 4</div>
+            </div>
+
+            <div class="menu-link" id="nav-sm-menu-option-3">
+              <div class="nav-menu-option">
+                <i class="fas fa-map-marker"></i> Location
+              </div>
+
+              <div id="arrow-menu3">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="nav-option-drop" id="drop-3">
+              <div>Option 1</div>
+              <div>Option 2</div>
+              <div>Option 3</div>
+              <div>Option 4</div>
+            </div>
+            <div class="menu-link" id="nav-sm-menu-option-4">
+              <div class="nav-menu-option">
+                <i class="fas fa-phone-alt"></i>Contact
+              </div>
+
+              <div id="arrow-menu4">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="nav-option-drop" id="drop-4">
+              <div>Option 1</div>
+              <div>Option 2</div>
+              <div>Option 3</div>
+              <div>Option 4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="footer">Footer</section>
   </body>
 
   <script src="./showsection/showcase.js"></script>
+  <script src="./navbar/navbar.js"></script>
 </html>
