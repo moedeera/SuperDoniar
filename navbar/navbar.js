@@ -180,3 +180,9 @@ dropDownMenu2.addEventListener("mouseleave", () => {
 dropDownMenu3.addEventListener("mouseleave", () => {
   clearDropdowns();
 });
+
+document
+  .getElementById("showcase-section")
+  .addEventListener("mouseenter", () => {
+    clearDropdowns();
+  });

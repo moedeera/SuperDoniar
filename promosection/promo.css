@@ -1,11 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
 .promo {
-  border: 3px solid crimson;
+  /* border: 3px solid crimson; */
+  font-family: "Lato", sans-serif;
+  background-color: white;
 }
 .promo-container {
-  border: 2px solid green;
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 20px 0;
 }
 .promo-block {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  width: 100%;
+  max-width: 600px;
   padding: 10px;
-  min-height: 250px;
+  height: 300px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: white;
+  transform: scale(0.98);
+  transition: 800ms ease-in-out;
+  cursor: pointer;
+  box-shadow: inset 0 0 10px;
+}
+.promo-block:hover {
+  transform: scale(1);
+  box-shadow: 5px 5px 10px;
+}
+.promo-block h2 {
+  display: inline;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background-color: crimson;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#promo-1 {
+  background: url("../pic1.jpg") no-repeat center center/cover;
+}
+#promo-2 {
+  background: url("./freshly-cooked.jpg") no-repeat center center/cover;
+}
+
+#promo-3 {
+  background: url("./beef-don.jpg") no-repeat center center/cover;
+  border: 1px solid rgba(128, 128, 128, 0.486);
+}
+
+@media only screen and (min-width: 800px) {
+  .promo-container {
+    gap: 20px;
+  }
 }
