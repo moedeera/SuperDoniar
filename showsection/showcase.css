@@ -63,21 +63,21 @@
 .buttons {
   position: absolute;
 
-  bottom: 30%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   width: 100%;
   max-width: 250px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 20px;
 }
 .slider-info {
   transition: 800ms ease-in-out;
 }
 .slider-info-text h2 {
-  background-color: crimson;
+  background-color: goldenrod;
   padding: 10px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -106,7 +106,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) {
   .slider-info {
-    width: 50%;
+    width: 100%;
     height: 80%;
     top: 10%;
     justify-content: space-evenly;
@@ -130,7 +130,7 @@
   }
 
   .buttons {
-    left: 25%;
+    left: 50%;
     /* border: 2px solid red; */
     display: flex;
     gap: 10px;
@@ -138,7 +138,7 @@
 }
 @media only screen and (min-width: 900px) {
   .slider-info {
-    width: 50%;
+    width: 100%;
     height: 80%;
     top: 10%;
     justify-content: space-evenly;
