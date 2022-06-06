@@ -168,6 +168,11 @@
     border-bottom: 0.5px solid aliceblue;
     /* border: 1px solid rgba(128, 128, 128, 0.107); */
   }
+  .menu-large-option a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
   #ml-option-1 {
     display: none;
   }
