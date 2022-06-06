@@ -186,3 +186,10 @@ document
   .addEventListener("mouseenter", () => {
     clearDropdowns();
   });
+
+const pick = document.getElementById(".pick");
+if (pick) {
+  pick.addEventListener("click", () => {
+    console.log("hey");
+  });
+}

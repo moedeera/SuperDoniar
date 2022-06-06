@@ -39,14 +39,15 @@ html {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: goldenrod; /* Set a background color */
+  background-color: aliceblue; /* Set a background color */
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 50%; /* Rounded corners */
   font-size: 28px; /* Increase font size */
   transition: 1200ms ease-in-out;
-  z-index: 10;
+  z-index: 20;
+  border: 1px solid gre;
 }
 
 #myBtn:hover {
