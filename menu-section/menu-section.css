@@ -7,8 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 128, 128, 0.096);
-
+  background-color: black;
   font-family: "Fira Sans", sans-serif;
 }
 .menu-title {
@@ -87,6 +86,7 @@
   position: absolute;
   bottom: -100%;
   width: 70%;
+  max-width: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -123,7 +123,8 @@
   }
 
   .Menu-section {
-    max-width: 1800px;
+    /* max-width: 1800px; */
+    padding: 0 50px;
   }
   .menutable {
     font-size: 18px;

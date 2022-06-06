@@ -4,7 +4,7 @@
   position: fixed;
   width: 100%;
   height: 50px;
-  background-color: white;
+  background-color: black;
   z-index: 1;
   font-family: "Fira Sans", sans-serif;
   border-bottom: 1px solid goldenrod;
@@ -23,11 +23,12 @@
   width: 100%;
   max-width: 350px;
   padding-top: 60px;
-  background-color: white;
+  background-color: black;
   top: 0;
   position: fixed;
   border-top: 1px solid gold;
   border-right: 1px solid gold;
+  color: white;
 }
 .nav-menu-list {
   height: 100%;
@@ -90,7 +91,7 @@
 #arrow-menu2,
 #arrow-menu3,
 #arrow-menu4 {
-  color: steelblue;
+  color: white;
   font-size: 14px;
 }
 .nav-large {
@@ -111,6 +112,7 @@
     max-width: 1000px;
     margin: 0 auto;
     display: block;
+    color: white;
   }
   .large-navbar-menu {
     display: flex;
@@ -130,18 +132,19 @@
     top: 35px;
     height: 250px;
     width: 300px;
-    background-color: white;
+    background-color: #34495e;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .menu-large-dropdown > div:hover {
-    background-color: aliceblue;
+    background-color: goldenrod;
     cursor: pointer;
   }
   .menu-large-option {
     display: flex;
     justify-content: center;
     align-items: center;
+
     border-left: 1px solid rgba(128, 128, 128, 0.322);
     border-bottom: 1px solid #34495e6e;
     /* border: 1px solid rgba(128, 128, 128, 0.107); */
@@ -152,12 +155,21 @@
   #ml-option-2 {
     display: none;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   #ml-option-3 {
     display: none;
     width: 200px;
     height: 150px;
+    grid-template-columns: 1fr;
+  }
+  #ml-o {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid green;
   }
   .menu-option-text {
     width: 100%;
@@ -167,18 +179,19 @@
     align-items: center;
     gap: 5px;
     font-size: 18px;
-    color: #34495e;
+    color: white;
     cursor: pointer;
   }
   .menu-option-text h3 {
     font-size: 18px;
-    color: #34495e;
+    color: white;
     margin-left: 5px;
   }
   .menu-option-text i {
     font-size: 16px;
     transition: 200ms ease-in-out;
   }
+
   /* .menu-option-text i:hover {
     color: #34495e;
     transform: rotate(180deg);

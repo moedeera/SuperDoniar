@@ -3,7 +3,7 @@
 .promo {
   /* border: 3px solid crimson; */
   font-family: "Lato", sans-serif;
-  background-color: white;
+  background-color: black;
 }
 .promo-container {
   width: 100%;
@@ -29,11 +29,11 @@
   transform: scale(0.98);
   transition: 800ms ease-in-out;
   cursor: pointer;
-  box-shadow: inset 0 0 10px;
+  box-shadow: inset 0 0 5px black;
 }
 .promo-block:hover {
   transform: scale(1);
-  box-shadow: 5px 5px 10px;
+  /* box-shadow: 5px 5px 10px; */
 }
 .promo-block h2 {
   display: inline;
