@@ -1,248 +1,468 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<script src="https://kit.fontawesome.com/f52626a245.js" crossorigin="anonymous"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="Styles3.css">
-	<link rel="stylesheet" href="utilities.css">
-	<title>Super-Donair.com</title>
-	<link rel = "icon" href = 
-	"https://cdn-icons-png.flaticon.com/512/1330/1330465.png" 
-			type = "image/x-icon">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <head>
+      <script
+        src="https://kit.fontawesome.com/f52626a245.js"
+        crossorigin="anonymous"
+      ></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="newstyle.css" />
+      <link rel="stylesheet" href="./promosection/promo.css" />
+      <link rel="stylesheet" href="./menu-section/menu-section.css" />
+      <link rel="stylesheet" href="./showsection/showcase.css" />
+      <link rel="stylesheet" href="./navbar/navbar.css" />
+      <link rel="stylesheet" href="./about-section/about.css" />
 
-<!-- section 1 : Navbar -->
+      <title>Super-Donair.com</title>
+      <link
+        rel="icon"
+        href="https://cdn-icons-png.flaticon.com/512/1330/1330465.png"
+        type="image/x-icon"
+      />
+    </head>
+  </head>
+  <body>
+    <section class="nav-bar">
+      <div class="navbar-container">
+        <div class="nav">
+          <i class="fa fa-bars" aria-hidden="true" id="navbar-menu"></i>
+          <i class="fa fa-arrow-left" aria-hidden="true" id="back-arrow"></i>
+          <h1>Super-Donair</h1>
+        </div>
+        <div class="nav-large">
+          <div class="large-navbar-menu">
+            <h1>Super Donair</h1>
+            <div class="large-navbar-mini-menu">
+              <div>
+                <div id="Menu-option-lg">
+                  <div class="menu-option-text" id="drop-down-1">
+                    <img src="./navbar/icons8-hamburger-80.png" width="30px" />
+                    <h3>
+                      Menu
+                      <i
+                        class="fa fa-chevron-down menu-icon"
+                        id="menu-icon-1"
+                      ></i>
+                    </h3>
+                  </div>
+                </div>
+                <div class="menu-large-dropdown" id="ml-option-1">
+                  <div class="menu-large-option">Donairs</div>
+                  <div class="menu-large-option">Platters</div>
+                  <div class="menu-large-option">Meals and Salads</div>
+                  <div class="menu-large-option">Pizzas</div>
+                </div>
+              </div>
+              <div>
+                <div class="menu-option-text" id="drop-down-2">
+                  <img src="./navbar/icons8-clock-128.png" width="25px" />
+                  <h3>
+                    Hours <i class="fa fa-chevron-down" id="menu-icon-2"></i>
+                  </h3>
+                </div>
+                <div class="menu-large-dropdown" id="ml-option-2">
+                  <div class="menu-large-option">Tuesday-Fridays 11am -9pm</div>
+                  <div class="menu-large-option">Saturday 11am-7pm</div>
+                  <div class="menu-large-option">Sunday 12-8:30pm</div>
+                  <div class="menu-large-option">Closed on Mondays</div>
+                </div>
+              </div>
+              <div>
+                <div class="menu-option-text" id="drop-down-3">
+                  <img src="./navbar/icons8-place-marker-64.png" width="25px" />
+                  <h3>
+                    Location <i class="fa fa-chevron-down" id="menu-icon-3"></i>
+                  </h3>
+                </div>
+                <div
+                  class="menu-large-dropdown"
+                  id="ml-option-3"
+                  style="border: none !important"
+                >
+                  <div
+                    class="menu-large-option"
+                    id="ml-o"
+                    style="border: none !important"
+                  >
+                    <iframe
+                      class="map-overlay"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9793.870875598808!2d-106.6705977!3d52.1440033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca7424dbaf2b5951!2sSuper%20Donair!5e0!3m2!1sen!2sca!4v1632386524120!5m2!1sen!2sca"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                    <div id="map"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="menu-option-text">
+                <i
+                  class="fa fa-facebook"
+                  aria-hidden="true"
+                  style="color: steelblue"
+                ></i>
+                Best Donair in town
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section>
-<header>
-<div class="navbar">
-	<!-- <div class="logo"><img src="donair.jpg" alt=""style="width:30px;"></div> -->
-	<!-- <img src="donair.jpg" alt=""style="width:50px; margin: 0 5px;" class="main-logo"> -->
-	<div class="title">
-		<h4>SUPER-DONAIR</h4>
-		
-	<div class="line ">
-	<h1 class="line-1 anim-typewriter">Best donair in town</h1>	
-	</div>
-	
-	</div>
-	
-	
-	<div class="navbar-lg">
-	<ul>
-	  <li><a href="" id="homeOption">Home</a></li>
-	  <li><a href="#menu" id="menuOption">Menu</a></li>
-	  <li><a href="#about" id="contactOption">Contact</a></li>
-	  <li><a href="#about" id="aboutOption">About</a></li>
-	  
-	</ul>
-	
-	</div>
-	<div class="menu" id="menu"><a href=""><i class="fas fa-bars fa-2x"></i></a></div>
-	<div class="login-modal" id="form-modal">
-  
-		<a href=""><i class="fas fa-times fa-2x" id="exit" ></i></a>
-		<div class="services-sm">
-	   
-		<ul>
-		  <li><a href="" id="menuHome">Home</a></li>
-		  <li><a href="#opt4h" id="menuOpt">Menu</a></li>
-		  <li><a href="#about" id="menuCont">Contact </a></li>
-		  <li><a href="#about" id="menuAbt">About </a></li>
-		  
-		</ul>
-		</div>
-		</div>
-	
+    <section class="showcase" id="showcase-section">
+      <div class="showcase-container">
+        <div class="slider">
+          <div class="slide" id="slide-1"></div>
+          <div class="slide" id="slide-2"></div>
+          <div class="slide" id="slide-3"></div>
+          <div class="slider-info" id="slider-info-1">
+            <div class="slider-info-text">
+              <h2>Delicious</h2>
+              <h1>Donairs</h1>
+            </div>
+          </div>
+          <div class="slider-info" id="slider-info-2">
+            <div class="slider-info-text">
+              <h2>Amazing</h2>
+              <h1>Platters</h1>
+            </div>
+          </div>
 
+          <div class="slider-info" id="slider-info-3">
+            <div class="slider-info-text">
+              <h2>Donair</h2>
+              <h1>Pizzas</h1>
+            </div>
+          </div>
 
+          <div class="buttons">
+            <i class="fa fa-circle" id="circle-1" style="color: crimson"></i>
+            <i class="fa fa-circle" id="circle-2"></i>
+            <i class="fa fa-circle" id="circle-3"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="Menu-section">
+      <div class="menu-title" id="menu2">Menu</div>
+      <div class="choices" id="choices-section">
+        <div class="option opt1">
+          <div class="menu-header" id="opt1h">
+            <a href="" id="opt1ht"
+              >Donairs
 
-</header>
-</section>	  
+              <i class="fa fa-chevron-circle-down" id="menu-pointer"></i>
+            </a>
+          </div>
+          <div class="menutable" id="opt1">
+            <div>Chicken</div>
+            <div>12.50</div>
+            <div>Lamb</div>
+            <div>12.50</div>
+            <div>Beef</div>
+            <div>12.50</div>
+            <div>Chicken Large</div>
+            <div>14.50</div>
+            <div>Lamb Large</div>
+            <div>14.50</div>
+            <div>Beef Large</div>
+            <div>14.50</div>
+          </div>
+        </div>
+        <div class="option opt2">
+          <div class="menu-header" id="opt2h">
+            <a href="" id="opt2ht"
+              >Platters
+              <i class="fa fa-chevron-circle-down" id="menu-pointer2"></i>
+            </a>
+          </div>
+          <div class="menutable" id="opt2">
+            <div>Lamb</div>
+            <div>16.50</div>
+            <div>Chicken</div>
+            <div>16.50</div>
+            <div>Beef</div>
+            <div>16.50</div>
+            <div>Mixed</div>
+            <div>16.50</div>
+            <div>Samosa</div>
+            <div>16.50</div>
 
-<!-- section 2 : Slider -->
+            <div>Chicken Fingers</div>
+            <div>11.70</div>
+          </div>
+        </div>
+        <div class="option opt3">
+          <div class="menu-header" id="opt3h">
+            <a href="" id="opt3ht">
+              Meals and Salads
+              <i class="fa fa-chevron-circle-down" id="menu-pointer3"></i>
+            </a>
+          </div>
+          <div class="menutable" id="opt3">
+            <div>Lamb</div>
+            <div>14.50</div>
+            <div>Salad</div>
+            <div>14.50</div>
+            <div>Beef Salad</div>
+            <div>14.50</div>
 
+            <div>Meat Poutine</div>
+            <div>13.50</div>
+            <div>Calamari</div>
+            <div>11.99</div>
+            <div>Poutine</div>
+            <div>7.65</div>
+          </div>
+        </div>
+        <div class="option opt4" id="opt4h0">
+          <div class="menu-header" id="opt4h">
+            <a href="" id="opt4ht"
+              >Pizzas
+              <i class="fa fa-chevron-circle-down" id="menu-pointer4"></i>
+            </a>
+          </div>
+          <div class="menutable" id="opt4">
+            <div>Vegetarian Pizza</div>
+            <div>22.50</div>
+            <div>Donair Pizza</div>
+            <div>22.50</div>
+            <div>Super Chicken</div>
+            <div>22.50</div>
+            <div>Buffalo Chicken</div>
+            <div>22.50</div>
+            <div>Meat Mix Pizza</div>
+            <div>31.49</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="showcase" id="showcase">
+    <section class="promo">
+      <h1>Delicous and Tasty Donairs Guranteed!</h1>
+      <div class="promo-container">
+        <div class="promo-block" id="promo-1"><h2>Classical Shawarmas</h2></div>
+        <div class="promo-block" id="promo-2">
+          <h2>Freshly cooked</h2>
+        </div>
+        <div class="promo-block" id="promo-3">
+          <h2>Try our Lamb and Beef</h2>
+        </div>
+      </div>
+    </section>
 
-	<div class="slider">
-<div class="clickables">
-<div class="arrow-left"><a href=""><i class="fas fa-chevron-left fa-2x"></i></a></div>	
+    <section class="about">
+      <div class="about-container">
+        <div class="about-info-div">
+          <div class="main-about">
+            <div class="main-about-info">
+              <h1>About Us</h1>
 
+              <p>
+                Super-Donair is a family owned resturaunt serving amazing
+                donairs in Saskatoon for over a decade.
+              </p>
+            </div>
 
+            <div class="about-main-icons">
+              <div>
+                <img
+                  src="./about-section/icons8-place-marker-80.png"
+                  alt=""
+                  srcset=""
+                  width="50px"
+                />110 33rd Street West, Saskatoon, SK S7L 0T8
+              </div>
+              <div>
+                <img
+                  src="./about-section/icons8-phone-64.png"
+                  alt=""
+                  srcset=""
+                  width="50px"
+                />
+                306-649-4949
+              </div>
+            </div>
 
-<div class="circles">
-<div class="circle">
-        <a href=""> <i class="fa fa-circle chosen" id="circle1"></i></a>
-          	</div>
-<div class="circle">
-		<a href=""> <i class="fa fa-circle" id="circle2"></i></a>		
-			</div>			  		  
-<div class="circle">
-		<a href=""> <i class="fa fa-circle" id="circle3"></i></a>
-					  </div>
-<div class="circle">
-		<a href=""> <i class="fa fa-circle" id="circle4" ></i></a>		
-					</div>					  		  
-									
-</div>
+            <div class="review">
+              <h3>Review us on Facebook and Google</h3>
+              <div class="review-icons">
+                <i class="fa fa-google" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="about-icons">
+            <div class="about-icons-unit">
+              <img
+                src="./about-section/icons8-chef-hat-100.png"
+                alt=""
+                srcset=""
+                width="100px"
+              />
+              <h3>Quality food</h3>
+            </div>
 
-<div class="arrow-right"><a href=""><i class="fas fa-chevron-right fa-2x"></i></a></div>
+            <div class="about-icons-unit">
+              <img
+                src="./about-section/icons8-wrap-100.png"
+                alt=""
+                srcset=""
+                width="150px"
+              />
+              <h3>Authentic recipes</h3>
+            </div>
 
-</div>		
+            <div class="about-icons-unit">
+              <img
+                src="./about-section/icons8-clock-128 (1).png"
+                alt=""
+                srcset=""
+                width="100px"
+              />
+              <h3>Timely delivery</h3>
+            </div>
+          </div>
+        </div>
+        <iframe
+          class="map-overlay"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9793.870875598808!2d-106.6705977!3d52.1440033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca7424dbaf2b5951!2sSuper%20Donair!5e0!3m2!1sen!2sca!4v1632386524120!5m2!1sen!2sca"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <div id="map"></div>
+        <!--The div element for the map -->
+      </div>
+    </section>
 
+    <!-- <section class="menu">
+      <div class="menu-container">
+        <div class="menu-header">
+          <h1>Our Menu</h1>
+        </div>
+        <div class="menu-options">
+          <div class="menu-option">
+            <div class="menu-button" id="menu-slider-btn-1">
+              <i class="fa fa-plus"></i>
+              <h3>Doniars</h3>
+            </div>
+            <div class="menu-slider" id="menu-slider-set-1">
+              <div class="menu-slide" id="menu-slider-option-1">Slide-1</div>
+              <div class="menu-slide" id="menu-slider-option-2">Slide-2</div>
+              <div class="menu-slide" id="menu-slider-option-3">Slide-3</div>
+              <div class="menu-slide" id="menu-slider-option-4">Slide-4</div>
+              <div class="menu-slide" id="menu-slider-option-5">Slide-5</div>
+              <div class="menu-slider-buttons">
+                <i
+                  class="fas fa-arrow-alt-circle-left"
+                  id="arrow-menu-slider-left"
+                ></i>
+                <i
+                  class="fas fa-arrow-alt-circle-right"
+                  id="arrow-menu-slider-right"
+                ></i>
+              </div>
+            </div>
+          </div>
 
-<div class="slides">
-<div class="slide" id="slide-1"><h3>Donairs</h3></div>
-<div class="slide" id="slide-2"><h3>Delicious Platters</h3></div>
-<div class="slide" id="slide-3"><h3>Meat Salad Meals</h3></div>
-<div class="slide" id="slide-4"><h3>Pizza</h3></div>
-</div>
+          <div class="menu-option">
+            <div class="menu-button" id="menu-slider-btn-2">
+              <i class="fa fa-plus"></i>
+              <h3>Doniars</h3>
+            </div>
+            <div class="menu-slider" id="menu-slider-set-2">
+              <div class="menu-slide" id="menu-slider-option-1b">Slide-1</div>
+              <div class="menu-slide" id="menu-slider-option-2b">Slide-2</div>
+              <div class="menu-slide" id="menu-slider-option-3b">Slide-3</div>
+              <div class="menu-slide" id="menu-slider-option-4b">Slide-4</div>
+              <div class="menu-slide" id="menu-slider-option-5b">Slide-5</div>
+              <div class="menu-slider-buttons"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="scroll-up">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa fa-chevron-up"></i>
+      </button>
+    </section>
+    <section class="navbar-menu-modal">
+      <div class="navbar-modal-container" id="menu-side-bar">
+        <div class="nav-menu-list">
+          <div class="menu-list">
+            <div class="menu-link" id="nav-sm-menu-option-1">
+              <div class="nav-menu-option">
+                <img src="./navbar/icons8-hamburger-80.png" width="20px" /> Menu
+              </div>
+              <div id="arrow-menu1">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="nav-option-drop" id="drop-1">
+              <div><a href="#opt1">Donairs</a></div>
+              <div><a href="#opt2">Platters</a></div>
+              <div><a href="#opt3">Meals and Salads</a></div>
+              <div><a href="#opt4">Pizzas</a></div>
+            </div>
 
-</div>
-</div>
-</div>
+            <div class="menu-link" id="nav-sm-menu-option-2">
+              <div class="nav-menu-option">
+                <img src="./navbar/icons8-clock-128.png" width="20px" />hours
+              </div>
 
+              <div id="arrow-menu2">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>
+            </div>
 
-<div class="info-bar">
+            <div class="nav-option-drop" id="drop-2">
+              <div>Tuesday-Friday 11am-9pm</div>
+              <div>Saturday 11am-7pm</div>
+              <div>Sunday 12-8:30pm</div>
+              <div>Closed on Mondays</div>
+            </div>
 
-<!-- <img src="chef-donair.jpg" alt="" style="width: 200px;"> -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9793.870875598808!2d-106.6705977!3d52.1440033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca7424dbaf2b5951!2sSuper%20Donair!5e0!3m2!1sen!2sca!4v1632386524120!5m2!1sen!2sca" width="100%" height="350" style="border-radius: 5px; padding:5px" allowfullscreen="" loading="lazy" class="mapframe"></iframe>
-    <div id="map2"></div>
-	<h2>	Donairs, Pizzas and much more</h2>
-	
-	<div>
+            <div class="menu-link" id="nav-sm-menu-option-3">
+              <div class="nav-menu-option">
+                <img src="./navbar/icons8-place-marker-64.png" width="20px" />
+                110 33rd Street West, Saskatoon, SK S7L 0T8
+              </div>
 
-<p>Call 306-649-4949 or come by at
-	110 33rd Street West	
-</p></div>
+              <div id="arrow-menu3" style="display: none">
+                <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+              </div>
+            </div>
+            <div class="nav-option-drop" id="drop-3">
+              <!-- <div>306-649-4949</div> -->
+            </div>
 
-<div class="hours">
-	<p>Hours</p>
-	<small>Tuesday-Fridays from 11am to 9pm</small>
-	<small> Saturday open from 11am to 7pm</small>
-	<small> Sunday open from 12pm to 8:30pm</small>
-	<small> Closed on Mondays</small>
-	
+            <div class="menu-link" id="nav-sm-menu-option-4">
+              <div class="nav-menu-option">
+                <img
+                  src="./navbar/icons8-phone-48.png"
+                  width="20px"
+                />306-649-4949
+              </div>
 
-</div>
+              <div id="arrow-menu4" style="display: none">
+                <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+              </div>
+            </div>
+            <div class="nav-option-drop" id="drop-4">
+              <!-- <div>306-649-4949</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">Footer</section>
+  </body>
 
-</div>
-
-</section>
-
-<!-- section 3 : Menu -->
-
-
-
-<section class="Menu" >
-
-<div class="menu-title"id="menu2">
-	Menu
-</div>
-<div class="choices" id="choices-section">
-
-<div class="option opt1">	
-	<div class="menu-header" id="opt1h"><h3 id="opt1ht">Donairs </h3></div> 
-    <div class="menutable" id="opt1">
-   
-	
-
-	<div>Chicken  Medium</div> <div>11.50</div>
-    <div>Lamb Medium</div> <div>11.50</div>
-	<div>Beef Medium</div> <div>11.50</div>
-	<div>Chicken Large</div> <div>11.50</div>
-	<div>Lamb Large</div> <div>11.50</div>
-    <div>Beef Large</div> <div>11.50</div>
-
-	</div>
-   
-</div>
-<div class="option opt2">
-	<div class="menu-header" id="opt2h"><a href="" id="opt2ht" >Platters and Salads</a></div> 
-    <div class="menutable" id="opt2">
-
-
-
-		<div>Lamb</div> <div>14.50</div>
-		<div>Chicken</div> <div>14.50</div>
-		<div>Beef</div> <div>14.50</div>
-		<div>Mixed</div> <div>14.50</div>
-		<div>Samosa</div> <div>14.50</div>
-		
-		<div>Chicken Fingers</div> <div>11.70</div>
-	</div>
-</div>
-<div class="option opt3">
-	<div class="menu-header" id="opt3h"><a href="" id="opt3ht"> Meals and Salads</a></div> 
-    <div class="menutable" id="opt3">
-		<div>Lamb Salad</div> <div>14.50</div>
-		<div>Chicken Salad</div> <div>14.50</div>
-		<div>Beef Salad</div> <div>14.50</div>
-
-		<div>Meat Poutine</div> <div>13.50</div>
-		<div>Calamari</div> <div>11.99</div>
-		<div>Poutine</div> <div>7.65</div>
-		
-		
-		
-		
-		
-		
-	</div>
-</div>
-<div class="option opt4" id="opt4h0">
-	<div class="menu-header" id="opt4h"><a href="" id="opt4ht">Pizzas</a></div> 
-    <div class="menutable" id="opt4">
-	
-    <div>Vegetarian Pizza</div> <div>22.50</div>
-	<div>Donair Pizza</div> <div>22.50</div>
-	<div>Super Chicken</div> <div>22.50</div>
-	<div>Buffalo Chicken</div> <div>22.50</div>
-    <div>Meat Mix Pizza</div> <div>1.49</div>
-	
-
-
-	</div>
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-<!-- section 4 : About Us -->
-<section class="about-us" id="about">
-<h3>About Us</h3>
-<p>110 33rd Street West, Saskatoon, SK S7L 0T8</p>
-<div class="icon-phone">
-<small>Telephone :1-306-649-4949 </small>
-<small><a href="https://www.facebook.com/pages/category/Restaurant/Super-Donair-139281793826/">Review and gives us a like on Facebook! <i class="fa fa-facebook"></i></a></small>
-</div>
-    <!--The div element for the map -->
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9793.870875598808!2d-106.6705977!3d52.1440033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca7424dbaf2b5951!2sSuper%20Donair!5e0!3m2!1sen!2sca!4v1632386524120!5m2!1sen!2sca" width="100%" height="300" style="border:0; padding:5px" allowfullscreen="" loading="lazy"></iframe>
-    <div id="map"></div>
-</section>
-
-
-
-<!-- section 6 footer : Slider -->
-
-
-
-<section class="overlay"></section>
-
-
-</body>
-<script src="main.js"></script>
+  <script src="./showsection/showcase.js"></script>
+  <script src="./navbar/navbar.js"></script>
+  <script src="main-2.js"></script>
+  <script src="./menu-section/menu-section.js"></script>
 </html>

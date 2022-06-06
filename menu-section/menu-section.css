@@ -9,6 +9,7 @@
   align-items: center;
   background-color: black;
   font-family: "Fira Sans", sans-serif;
+  padding-top: 50px;
 }
 .menu-title {
   padding: 10px;
@@ -44,6 +45,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  opacity: 0.9;
+  transform: 600ms ease-in-out;
+}
+.option:hover {
+  opacity: 1;
 }
 .opt1 {
   background: url("../pic1.jpg") no-repeat center center/cover;
@@ -59,7 +65,12 @@
 .opt4 {
   background: url("../pic4.jpg") no-repeat center center/cover;
 }
-
+#menu-pointer,
+#menu-pointer2,
+#menu-pointer3,
+#menu-pointer4 {
+  transition: 400ms ease-in-out;
+}
 /*Menu-functionality*/
 .menu-header {
   cursor: pointer;

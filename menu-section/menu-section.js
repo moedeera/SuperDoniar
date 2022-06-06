@@ -21,6 +21,13 @@ var MenuTargets = [
   document.getElementById("opt4ht"),
 ];
 
+var pointerTargets = [
+  document.getElementById("menu-pointer"),
+  document.getElementById("menu-pointer2"),
+  document.getElementById("menu-pointer3"),
+  document.getElementById("menu-pointer4"),
+];
+
 document.getElementById("choices-section").addEventListener("click", (e) => {
   e.preventDefault();
   //
@@ -33,6 +40,7 @@ document.getElementById("choices-section").addEventListener("click", (e) => {
         ClearMenus();
         MenuTables[j].style.bottom = "30%";
         MenuHeaders[j].style.top = "10%";
+        pointerTargets[j].style.transform = "rotate(180deg)";
       }
     }
   }
@@ -42,5 +50,6 @@ function ClearMenus() {
   for (var j = 0; j < MenuTables.length; j++) {
     MenuHeaders[j].style.top = "50%";
     MenuTables[j].style.bottom = "-100%";
+    pointerTargets[j].style.transform = "rotate(0deg)";
   }
 }

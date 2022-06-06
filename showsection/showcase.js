@@ -98,4 +98,4 @@ const sliderMovement = () => {
     slide3Info.style.left = "0%";
   }
 };
-// setInterval(sliderMovement, 7000);
+setInterval(sliderMovement, 5000);
