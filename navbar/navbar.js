@@ -187,9 +187,39 @@ document
     clearDropdowns();
   });
 
-const pick = document.getElementById(".pick");
-if (pick) {
-  pick.addEventListener("click", () => {
-    console.log("hey");
-  });
-}
+const pick = document.getElementById("pick");
+const pick2 = document.getElementById("pick2");
+const pick3 = document.getElementById("pick3");
+const pick4 = document.getElementById("pick4");
+
+pick.addEventListener("click", () => {
+  navbarButton.style = "display:block";
+  backArrow.style = "display:none";
+
+  document.getElementById("menu-side-bar").style =
+    "transform:translateX(-100%)";
+});
+
+pick2.addEventListener("click", () => {
+  navbarButton.style = "display:block";
+  backArrow.style = "display:none";
+
+  document.getElementById("menu-side-bar").style =
+    "transform:translateX(-100%)";
+});
+
+pick3.addEventListener("click", () => {
+  navbarButton.style = "display:block";
+  backArrow.style = "display:none";
+
+  document.getElementById("menu-side-bar").style =
+    "transform:translateX(-100%)";
+});
+
+pick4.addEventListener("click", () => {
+  navbarButton.style = "display:block";
+  backArrow.style = "display:none";
+
+  document.getElementById("menu-side-bar").style =
+    "transform:translateX(-100%)";
+});
