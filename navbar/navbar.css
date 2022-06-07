@@ -8,6 +8,7 @@
   z-index: 1;
   font-family: "Lato", sans-serif;
   border-bottom: 1px solid goldenrod;
+  transition: 700ms ease-in-out;
 }
 .navbar-container {
 }
