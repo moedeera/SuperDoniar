@@ -38,6 +38,7 @@
   border-top: 1px solid gold;
   border-right: 1px solid gold;
   color: white;
+  z-index: 3;
 }
 .nav-menu-list {
   height: 100%;
