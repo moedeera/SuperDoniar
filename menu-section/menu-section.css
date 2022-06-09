@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: var(--color-primary);
   font-family: "Fira Sans", sans-serif;
   padding-top: 50px;
 }
@@ -15,8 +15,8 @@
   padding: 10px;
   font-size: 2rem;
   letter-spacing: 3px;
-  background-color: goldenrod;
-  color: white;
+  background-color: var(--color-alternate);
+  color: var(--color-text);
   border-radius: 5px;
   margin: 20px auto;
   font-weight: 700;
@@ -78,7 +78,7 @@
   position: absolute;
   top: 50%;
   transition: 1s ease-in-out;
-  background: crimson;
+  background: var(--color-secondary);
   padding: 10px;
   text-align: center;
   border-top-left-radius: 10px;
@@ -87,7 +87,7 @@
 }
 
 .menu-header a {
-  color: white;
+  color: var(--color-text);
   cursor: pointer;
   text-decoration: none;
 }
@@ -105,8 +105,8 @@
   grid-column-gap: 0px;
   grid-row-gap: 10px;
   font-size: 16px;
-  background: rgba(218, 165, 32, 0.95);
-  color: white;
+  background: var(--color-alternate-2);
+  color: var(--color-text);
   padding: 10px;
 
   transition: 1s ease-in-out;

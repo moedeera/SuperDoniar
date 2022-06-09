@@ -14,7 +14,7 @@
   max-width: 600px;
   top: 10%;
   left: 0;
-  background-color: rgba(218, 165, 32, 0.855);
+  background-color: var(--color-alternate-2);
 
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -34,9 +34,9 @@
   z-index: 0;
 }
 .main-about-info h1 {
-  color: crimson;
+  color: var(--color-secondary);
   font-weight: 900;
-  background-color: crimson;
+  background-color: var(--color-secondary);
   color: white;
   width: fit-content;
   padding: 7px 20px;
@@ -45,7 +45,7 @@
   margin-bottom: 10px;
 }
 .main-about-info p {
-  color: black;
+  color: var(--color-text-alt);
   letter-spacing: 1.5px;
   line-height: 1.6em;
   font-weight: 700;
@@ -61,7 +61,7 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
-  color: black;
+  color: var(--color-text-alt);
   letter-spacing: 1.5px;
   line-height: 1.6em;
   font-weight: 700;
@@ -77,7 +77,7 @@
 .review {
 }
 .review h3 {
-  color: black;
+  color: var(--color-text-alt);
   font-weight: 700;
   text-align: center;
   padding: 10px 0;
@@ -88,7 +88,7 @@
 }
 
 .review-icons i {
-  color: #34495e;
+  color: var(--color-dark-bg);
   font-size: 38px;
   background-color: aliceblue;
   height: 50px;
@@ -114,7 +114,7 @@
     transition: 800ms ease-in-out;
   }
   .about-info-div:hover {
-    background-color: rgba(218, 165, 32, 0.955);
+    background-color: var(--color-alternate-2);
   }
 
   .about-icons {
