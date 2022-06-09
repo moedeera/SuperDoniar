@@ -9,6 +9,7 @@
   font-family: "Lato", sans-serif;
   border-bottom: 1px solid goldenrod;
   transition: 700ms ease-in-out;
+  z-index: 4;
 }
 .navbar-container {
 }
@@ -133,6 +134,7 @@
     margin: 0 auto;
     display: block;
     color: white;
+    z-index: 4;
   }
   .large-navbar-menu {
     display: flex;
