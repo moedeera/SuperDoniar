@@ -23,8 +23,26 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-AOS.init({
-  offset: 200, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
+const faders = document.querySelectorAll(".fade-test");
+
+const appearOptions = {
+  threshold: 1,
+};
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add("appear");
+    console.log("hello");
+    appearOnScroll.unobserve(entry.target);
+  });
+},
+appearOptions);
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
 });

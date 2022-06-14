@@ -61,8 +61,28 @@ html {
   border: 1px solid gre;
 }
 
+.fade-test {
+  opacity: 0;
+
+  transition: opacity 600ms ease-in;
+}
+.fade-test.appear {
+  opacity: 1;
+}
+
 #myBtn:hover {
   background-color: var(
     --color-alternate
   ); /* Add a dark-grey background on hover */
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
