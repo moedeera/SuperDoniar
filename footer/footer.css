@@ -68,9 +68,10 @@
 }
 
 .second-quad {
-  min-width: 300px;
-  gap: 60px;
-  height: 350px;
+  width: 100%;
+  max-width: 450px;
+  gap: 30px;
+  height: 300px;
 }
 .second-quad ul {
   list-style: none;
