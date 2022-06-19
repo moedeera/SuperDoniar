@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
 .footer-container {
   background-color: var(--color-primary);
+  font-family: "Lato", sans-serif;
 }
 .lower-footer {
   color: var(--color-text);
@@ -22,5 +25,90 @@
   display: flex;
   min-width: 5rem;
   max-width: 20rem;
+  justify-content: space-between;
+}
+
+.Upper-footer {
+  padding: 10px;
+  color: white;
+  display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+.up-quad {
+  min-height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-quad {
+  justify-content: space-evenly;
+}
+.first-quad p {
+  line-height: 1.4em;
+  letter-spacing: 1px;
+}
+.up-quad-socials {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.up-quad-socials i {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.second-quad {
+  min-width: 300px;
+  gap: 60px;
+  height: 350px;
+}
+.second-quad ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-quad li {
+  cursor: pointer;
+}
+.third-quad {
+  gap: 50px;
+  min-width: 300px;
+}
+.third-quad ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.third-quad li {
+  display: flex;
+  gap: 10px;
+}
+.fourth-quad {
+  border: 3px solid orange;
+  min-width: 300px;
+  gap: 10px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  max-width: 400px;
+}
+.image-gallery img {
+  height: 95px;
+  width: 95px;
+  object-fit: cover;
 }

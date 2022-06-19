@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: 1fr;
   font-family: "Lato", sans-serif;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0.1, 0.4);
   z-index: 2;
 }
 
@@ -115,6 +116,9 @@
   }
   .about-info-div:hover {
     background-color: var(--color-alternate-2);
+  }
+  .about-info-div:hover {
+    background-color: aliceblue;
   }
 
   .about-icons {
