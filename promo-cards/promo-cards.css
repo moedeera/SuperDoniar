@@ -1,0 +1,30 @@
+.promo-cards {
+  background-color: var(--color-primary);
+  border: 2px solid green;
+  padding: 40px 0;
+  color: var(--color-text);
+}
+.promo-cards-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.promo-card {
+  height: 500px;
+  border: 1px solid var(--color-text);
+  border-radius: 4px;
+  max-width: 350px;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  letter-spacing: 1px;
+  padding: 0 15px;
+}

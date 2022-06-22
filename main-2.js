@@ -9,7 +9,8 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
-    document.getElementById("nav-bar-section").style.background = "crimson";
+    document.getElementById("nav-bar-section").style.background =
+      "var(--color-secondary)";
   } else {
     mybutton.style.display = "none";
     document.getElementById("nav-bar-section").style = "background:black";
