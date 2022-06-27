@@ -56,7 +56,8 @@
 }
 
 .up-quad-socials i {
-  border: 1px solid white;
+  background-color: crimson;
+
   border-radius: 50%;
   height: 40px;
   width: 40px;
