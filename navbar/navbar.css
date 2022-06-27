@@ -177,6 +177,7 @@
 
     border-left: 1px solid rgba(128, 128, 128, 0.322);
     border-bottom: 0.5px solid var(--color-text);
+    color: black !important;
     /* border: 1px solid rgba(128, 128, 128, 0.107); */
   }
   .menu-large-option a {
@@ -189,7 +190,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
   }
+
   #ml-option-1 {
     display: none;
   }
@@ -309,4 +312,7 @@
 .dark-theme {
   background-color: black;
   color: white !important;
+}
+.menu-large-option {
+  color: black !important;
 }
