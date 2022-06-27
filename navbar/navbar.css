@@ -14,6 +14,7 @@
 
   display: flex;
   align-items: center;
+  padding: 30px 0;
 }
 .navbar-container {
   width: 100%;
@@ -37,7 +38,7 @@
   height: 100vh;
   width: 100%;
   max-width: 350px;
-  padding-top: 60px;
+  padding-top: 45px;
   background-color: var(--color-primary);
   top: 0;
   position: fixed;
@@ -48,6 +49,7 @@
 }
 .nav-menu-list {
   height: 100%;
+  background-color: white;
 }
 .menu-list {
   height: fit-content;
@@ -65,7 +67,7 @@
 
   height: fit-content;
   width: 100%;
-  background-color: var(--color-dark-bg);
+  background-color: white;
   /* border-bottom: 0.5px solid var(--color-text); */
   flex-direction: column;
   gap: 0px;
@@ -120,6 +122,7 @@
 #ml-0:hover {
   background-color: var(--color-dark-bg) !important;
 }
+
 @media only screen and (min-width: 800px) {
   .nav-bar {
     /* border-bottom: 1px solid var(--color-dark-bg); */
