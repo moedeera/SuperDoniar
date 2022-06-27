@@ -9,12 +9,14 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
-    document.getElementById("nav-bar-section").style.background =
-      "var(--color-secondary)";
+    document.getElementById("nav-bar-section").style =
+      "background:rgba(255, 255, 255, 0.85); padding:35px 0; color:white!important";
+    // document.getElementById("nav-large").style.color = "white";
   } else {
     mybutton.style.display = "none";
-    document.getElementById("nav-bar-section").style = "background:black";
-    document.getElementById("nav-bar-section").style = "color: white;";
+    document.getElementById("nav-bar-section").style = "background:white";
+    document.getElementById("nav-large-menu").style =
+      "color: white !important;";
   }
 }
 

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 .promo {
-  /* border: 3px solid crimson; */
   font-family: "Lato", sans-serif;
   background-color: black;
   padding-top: 40px;
@@ -30,11 +29,12 @@
   justify-content: center;
   margin: 40px auto;
   padding: 20px 20px;
+  max-width: 1300px;
 }
 .promo-block {
   /* border: 1px solid green; */
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   padding: 20px;
   height: 300px;
   display: flex;

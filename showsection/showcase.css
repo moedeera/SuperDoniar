@@ -149,7 +149,7 @@
     font-size: 22px;
   }
   .slider {
-    height: 90vh;
+    height: 100vh;
   }
   .slide {
     transition: 1200ms ease-in-out;

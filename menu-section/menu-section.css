@@ -10,6 +10,8 @@
   background-color: var(--color-primary);
   font-family: "Fira Sans", sans-serif;
   padding-top: 50px;
+
+  max-width: 1300px;
 }
 .menu-title {
   padding: 10px;
@@ -88,6 +90,7 @@
 
 .menu-header a {
   color: var(--color-text);
+  color: aliceblue;
   cursor: pointer;
   text-decoration: none;
 }

@@ -19,7 +19,7 @@ html {
   --color-variant: crimson;
   --color-alternate: goldenrod;
   --color-alternate-2: rgba(218, 165, 32, 0.941);
-  --color-text: white;
+  --color-text: black;
   --color-dark-bg: #34495e;
   --color-text-alt: black;
 }
