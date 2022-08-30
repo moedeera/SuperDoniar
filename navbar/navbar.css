@@ -209,15 +209,17 @@
   #ml-option-2 {
     display: none;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
   #ml-option-3 {
     display: none;
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 75px;
+    line-height: 1.8em;
     grid-template-columns: 1fr;
     transition: 500ms ease-in-out;
   }
+
   #ml-o {
     margin: 0;
     display: flex;
@@ -226,7 +228,11 @@
     text-align: center;
     position: relative;
   }
-
+  #drop-down-4 a,
+  #drop-down-4 a:visited {
+    color: black;
+    text-decoration: none;
+  }
   .menu-option-text {
     width: 100%;
 
