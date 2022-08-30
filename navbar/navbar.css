@@ -19,9 +19,14 @@
 .navbar-container {
   width: 100%;
 }
+.nav h1 {
+  font-weight: 900;
+  color: crimson;
+}
 .nav {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
   align-items: center;
   line-height: 50px;
   padding: 0 5px;
@@ -122,7 +127,10 @@
 #ml-0:hover {
   background-color: var(--color-dark-bg) !important;
 }
-
+.large-navbar-menu h1 {
+  color: crimson;
+  font-weight: 900;
+}
 @media only screen and (min-width: 800px) {
   .nav-bar {
     /* border-bottom: 1px solid var(--color-dark-bg); */
@@ -138,7 +146,7 @@
     /* border: 3px solid green; */
     width: 100%;
 
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     display: block;
     color: var(--color-text);
@@ -146,10 +154,9 @@
   }
   .large-navbar-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     align-items: center;
-    justify-content: center;
   }
   .large-navbar-mini-menu {
     width: 50%;
